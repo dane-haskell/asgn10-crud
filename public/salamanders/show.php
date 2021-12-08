@@ -14,7 +14,7 @@ include(SHARED_PATH . '/salamanderHeader.php');
 
   <div class="slamander show">
 
-    <h1>Salamander: <?= h($salamander)['name']); ?></h1>
+    <h1>Salamander: <?= h($salamander['name']); ?></h1>
 
     <div class="attributes">
       <dl>
