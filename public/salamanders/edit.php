@@ -11,9 +11,9 @@ if(is_post_request()) {
 
   $salamander = [];
   $salamander['id'] = $id;
-  $name = $_POST['salamanderName'] ?? '';
-  $habitat = $_POST['habitat'] ?? '';
-  $description = $_POST['description'] ?? '';
+  $salamander['name'] = $_POST['salamanderName'] ?? '';
+  $salamander['habitat'] = $_POST['habitat'] ?? '';
+  $salamander['description'] = $_POST['description'] ?? '';
 
   $result = update_salamander($salamander);
   redirect_to(url_for('/salamanders/show.php?id=' . $id));
