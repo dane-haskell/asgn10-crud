@@ -13,6 +13,14 @@ include(SHARED_PATH . '/salamanderHeader.php');
         <dt>Salamander Name</dt>
         <dd><input type="text" name="salamanderName" value="" /></dd>
       </dl>
+      <dl>
+        <dt>Salamander Habitat</dt>
+        <dd><input type="textarea" name="salamanderHabitat" rows="4" cols="75" value="" /></dd>
+      </dl>
+      <dl>
+        <dt>Salamander Description</dt>
+        <dd><input type="textarea" name="salamanderDescription" rows="4" cols="75" value="" /></dd>
+      </dl>
         <input type="submit" value="Create Salamander" />
     </form>
 
