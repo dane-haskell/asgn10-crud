@@ -56,7 +56,7 @@ function update_salamander($salamander) {
     $result = mysqli_query($db, $sql);
     // For UPDATE statements, $result is true/false
     if($result) {
-      return true;
+      redirect_to(url_for('/salamanders'));
     } else {
       // UPDATE failed
       echo mysqli_error($db);
