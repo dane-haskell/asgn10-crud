@@ -24,7 +24,7 @@ function find_salamander_by_id($id) {
 function insert_salamander($salamander) {
     global $db;
 
-    $sql = "INSERT INTO salamanders ";
+    $sql = "INSERT INTO salamander ";
     $sql .= "(name, habitat, description) ";
     $sql .= "VALUES (";
     $sql .= "'" . $salamander['name'] . "',";
